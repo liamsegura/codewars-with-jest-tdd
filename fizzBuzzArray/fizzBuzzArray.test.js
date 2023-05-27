@@ -14,6 +14,7 @@ describe('fizzBuzz array function', () => {
 
     it('argument given will never be less than 1',  () => {
         expect(() => fizzBuzzArray(0)).toThrowError('Number cannot be less than one, and must be a number')
+        expect(() => fizzBuzzArray('2')).toThrowError('Number cannot be less than one, and must be a number')
     })
     it('Should give the value "Fizz", if one of the elements in the array is a multiple of 3', () =>{
         expect(fizzBuzzArray(3)).toEqual([1,2,"Fizz"])
