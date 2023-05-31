@@ -9,8 +9,7 @@ const sumArray = require('./sumArray')
 
 describe('Sum Arrays', () => {
     it('Array elements must be numbers', () => {
-        expect(() =>  sumArray([1,'2'])).toThrowError('Array must contain only numbers')
-        
+        expect(() =>  sumArray([1,'2'])).toThrowError('Array must contain only numbers') 
     })
 
     it('Should sum all numbers together and return the number', () => {

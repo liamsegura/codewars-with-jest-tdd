@@ -9,7 +9,6 @@ const sumArray = (arr) => {
         }
     });
 
-    console.log(arr)
     return  arr.reduce((a,b) => a + b, 0)
     
 }
